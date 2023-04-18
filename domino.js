@@ -143,8 +143,8 @@ function checkTile(id){
         value2: numbersArray[1]
     }
     var isValid = false;
-    if(tile.value1 === valueLeft || tile.value1 === valueRight
-        || tile.value2 === valueLeft || tile.value2 === valueRight){
+    if(tile.value1 == valueLeft || tile.value1 == valueRight
+        || tile.value2 == valueLeft || tile.value2 == valueRight){
             isValid = true;
         }
     var noTilesPlayed = true;
@@ -163,8 +163,6 @@ function displayPlayerTile(tileToBeAdded){
     var lowerValue;
     var higherValue;
     var tileFileName = "";
-    console.log(tileToBeAdded.value1);
-    console.log(tileToBeAdded.value2);
     if(tileToBeAdded.value1 < tileToBeAdded.value2){
         lowerValue = tileToBeAdded.value1;
         higherValue = tileToBeAdded.value2
